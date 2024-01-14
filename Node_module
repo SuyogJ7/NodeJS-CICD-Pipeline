@@ -1,0 +1,80 @@
+
+    first commit
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# cd..
+cd..: command not found
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# cd ..
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git remote add origin https://github.com/SuyogJ7/DevOps-CICD-Pipeline.git
+fatal: remote origin already exists.
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git remote -v
+origin  https://github.com/SuyogJ7/NodeJS-CICD-Pipeline.git (fetch)
+origin  https://github.com/SuyogJ7/NodeJS-CICD-Pipeline.git (push)
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git add .
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git commit -m "Cicd"
+[master df48b51] Cicd
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git push -u origin master
+Username for 'https://github.com': SuyogJ7
+Password for 'https://SuyogJ7@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 239 bytes | 239.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SuyogJ7/NodeJS-CICD-Pipeline.git
+   738fad4..df48b51  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+root@ip-10-0-9-200:/home/ubuntu/nodejs# ls
+docker-compose.yml  nginx  nodedocker_app
+root@ip-10-0-9-200:/home/ubuntu/nodejs# git rm nodedocker_app
+fatal: could not lookup name for submodule 'nodedocker_app'
+root@ip-10-0-9-200:/home/ubuntu/nodejs# cd nodedockerapp
+bash: cd: nodedockerapp: No such file or directory
+root@ip-10-0-9-200:/home/ubuntu/nodejs# cd nodedocker_app
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# ls
+app.js  dockerfile  node_modules  package-lock.json  package.json  routes  views
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# vi dockerfile
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# vi package.json
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# vi app.js
+root@ip-10-0-9-200:/home/ubuntu/nodejs/nodedocker_app# vi node_modules
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v165)
+"   /home/ubuntu/nodejs/nodedocker_app/node_modules
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+./
+.bin/
+@kwsites/
+@sindresorhus/
+@szmarczak/
+@types/
+abbrev/
+accepts/
+ansi-align/
+ansi-regex/
+ansi-styles/
+anymatch/
+array-flatten/
+balanced-match/
+binary-extensions/
+body-parser/
+boxen/
+brace-expansion/
+braces/
+bytes/
+cacheable-request/
+camelcase/
+chalk/
+chokidar/
+ci-info/
+cli-boxes/
+clone-response/
+color-convert/
+color-name/
+concat-map/
+configstore/
+content-disposition/
+content-type/
